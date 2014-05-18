@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Random Wikipedia Generator</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src = "scripts.js"></script>
+</head>
+<body>
+ 
+<div class="ui-widget">
+  <label for="autocomplete">Enter your favorite topic: </label>
+  <input id="autocomplete">
+</div>
+
+<ul id = "selected-categories">
+
+</ul>
+
+<button id = "generate-new-random" type="button">Generate new article!</button>
+
+<div id = "search-results">
+
+</div>
+
+
+
+<iframe id = "wikipage" src="http://en.wikipedia.org/wiki/Bend_of_Islands,_Victoria" style = "width:100%; height:1000px"></iframe>
+
+<!--
+
+http://en.wikipedia.org/?curid=3025488
+
+https://en.wikipedia.org/w/api.php?action=query&format=json&generator=categorymembers&gcmtitle=Category%3APhysics&gcmnamespace=0&gcmlimit=10
+
+http://en.wikipedia.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:Hollywood&cmlimit=500&cmtype=page
+
+http://en.wikipedia.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:Physics&cmlimit=500&cmprop=type|title|ids  -->
+
+</body>
+</html>
+
